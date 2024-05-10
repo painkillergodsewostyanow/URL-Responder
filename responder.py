@@ -39,7 +39,7 @@ def responder(lst):
             response = requests.get(i)
             status = response.status_code
 
-            if output_cods:
+            if len(output_cods) > 0:
                 if status not in output_cods:
                     continue
 
